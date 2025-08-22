@@ -1,0 +1,101 @@
+\documentclass[2pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip} % better spacing between paragraphs
+\usepackage{array}   % better tables
+\usepackage{mathtools} 
+\usepackage{amsmath} 
+\usepackage{longtable}
+
+\newlength{\datecolumn}
+\setlength{\datecolumn}{0.25\linewidth}
+\newlength{\textcolumn}
+\setlength{\textcolumn}{1\linewidth}
+
+% \setlength{\tabcolsep}{3pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1} % Default value: 1
+
+\begin{document}
+
+% Name and contact info
+\begin{center}
+    {\LARGE \textbf{Stuart Shannon}} \\
+    {\normalsize \textbf{Lead/Principal Software Engineer}} \\
+    \vspace{0.2cm}
+    Belfast, UK \quad \(|\) \quad shannoncode@yahoo.com \quad \(|\) \quad +44(0)7834452305 \quad \(|\) \quad linkedin.com/in/stuart-shannon-bb780530 \quad \(|\) \quad github.com/saraandstuart \quad \(|\) \quad stackoverflow.com/users/2124106/stuart 
+\end{center}
+
+% Profile
+\section*{Profile}
+% \begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+\begin{tabular}{p{\datecolumn} p{\textcolumn}}
+& Lead/Principal Software Engineer with 20+ years’ experience delivering scalable, high-performance systems across fintech, blockchain, and cloud domains. Proven track record in leading teams, architecting distributed systems, and optimising software delivery pipelines. Passionate about solving complex technical challenges, driving DevOps excellence, and delivering measurable business value. \\
+\end{tabular}
+
+% Skills
+\section*{Skills}
+% \begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+\begin{tabular}{p{\datecolumn} p{\textcolumn}}
+Languages  & Kotlin, Java, JavaScript, TypeScript, Python, Rust \\
+Frameworks & Spring, Http4k, Apache Storm, Angular \\
+Tools      & Git, Docker, Nomad, Vault, Consul, Terraform, GitHub Actions, Jenkins, TeamCity, GitLab, ELK \\
+Database   & Postgres, Oracle, MySQL, DB2, MongoDB, Redis \\
+Cloud      & AWS, Azure \\
+\end{tabular}
+
+% Experience
+\section*{Experience}
+% \begin{longtable}{p{0.2\linewidth} p{0.75\linewidth}}
+\begin{longtable}{p{\datecolumn} p{\textcolumn}}
+01/2020--Present & \textbf{Lead/Principal Software Engineer}, Noumena Digital, Switzerland \\
+                 & \begin{itemize}
+                        \item Led delivery of fintech, blockchain, and energy sector projects including:
+                        \begin{itemize}
+                            \item \textbf{Solar Panel Financing App} (Investerra) – streamlined investment workflows.
+                            \item \textbf{Virtual Power Plant} (N-Ergie) – optimised farm electricity generation.
+                            \item \textbf{Private Markets Exchange} (Julius Baer) – implemented PoC for digital asset trading.
+                            \item \textbf{Smart Billing Platform} – enabled invoice tokenisation/trading for blockchain grant.
+                        \end{itemize} 
+                        \item Architected and implemented distributed, high-throughput systems using Kotlin, Java~17, Rust, Spring Boot, http4k, and Docker.
+                        \item Built internal developer tools improving migration efficiency.
+                   \end{itemize} \\ \\
+01/2018--11/2019 & \textbf{Principal Software Engineer}, Visa, Belfast \\
+                 & \begin{itemize}
+                        \item Led 3-person team on greenfield \textbf{Payment Token Migration} handling millions of records with zero downtime.
+                        \item Designed and implemented architecture components: rate limiting, multi-threading, error handling, performance testing.
+                        \item Delivered v2 tokenisation endpoints.
+                   \end{itemize} \\ \\
+01/2017--01/2018 & \textbf{Principal Software Engineer}, Citibank, Belfast \\
+                 & \begin{itemize}
+                        \item Ported legacy (C\# .NET) SEDA platform to a Java/Apache Storm \textbf{stream-based actor model}, enabling low-latency distributed processing.
+                        \item Owned CI/CD pipelines, cloud provisioning, and monitoring infrastructure for globally distributed teams.
+                   \end{itemize} \\ \\
+01/2008--12/2016 & \textbf{Senior/Lead/DevOps Roles}, Liberty IT, Sophia Search, CME, SpeechStorm, Belfast \\
+                 & \begin{itemize}
+                        \item Migrated pricing engines, risk calculation systems, and recommendation platforms to cloud-native architectures.
+                        \item Introduced CI/CD pipelines and DevOps tooling, reducing deployment time from days to hours.
+                        \item Developed real-time analytics dashboards and ML-driven recommendation improvements, boosting click-through rates.
+                   \end{itemize} \\ \\
+10/2003--12/2007 & \textbf{Earlier Career}, Various Financial and Insurance Firms, Belfast \\
+                 & \begin{itemize}
+                        \item Led SOA re-architecture projects for life insurance systems.
+                        \item Developed automated testing frameworks and performance testing solutions for financial services.
+                   \end{itemize} \\ \\
+\end{longtable}
+
+% Education
+\section*{Education}
+% \begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+\begin{tabular}{p{\datecolumn} p{\textcolumn}}
+1998--2002 & \textbf{BSc in Computer Science}, The University of Edinburgh \\
+\end{tabular}
+
+% Certificates
+\section*{Certificates}
+% \begin{tabular}{p{0.2\linewidth} p{0.75\linewidth}}
+\begin{tabular}{p{\datecolumn} p{\textcolumn}}
+10/2009 & \textbf{Sun Certified Web Java Component Developer, EE5}, Sun Microsystems \\
+09/2008 & \textbf{Sun Certified Java Programmer, SE 5}, Sun Microsystems \\
+\end{tabular}
+
+\end{document}

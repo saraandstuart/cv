@@ -3,11 +3,5 @@
 ### Build PDF
 
 ```shell
-pdflatex --output-directory=out/ src/stuart_shannon_cv_long.tex
+pdflatex --output-directory=out/ src/stuart_shannon_cv.tex
 ```
-
-```shell
-pdflatex --output-directory=out/ src/stuart_shannon_cv_short.tex
-```
-
-
